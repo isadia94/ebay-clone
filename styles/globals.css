@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Oranienbaum&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+  .connectWalletBtn {
+    @apply bg-blue-500 text-white font-bold flex py-2 px-4 rounded cursor-pointer;
+  }
+
+  .link {
+    @apply hover:text-blue-500 hover:underline cursor-pointer text-gray-600;
+  }
+}
